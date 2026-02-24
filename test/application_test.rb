@@ -4,17 +4,17 @@ class TestApp < Rulers::Application
 end
 
 class RulersAppTest < Minitest::Test
-	include Rack::Test::Methods
+  include Rack::Test::Methods
 
-	def app
-		TestApp.new
-	end
+  def app
+    TestApp.new
+  end
 
-	def test_request
-		get "/"
+  def test_request
+    get "/"
 
-		assert last_response.ok?
-		body = last_response.body
-		assert body["Hello"]
-	end
+    assert last_response.ok?
+    body = last_response.body
+    assert body["Hello"]
+  end
 end
