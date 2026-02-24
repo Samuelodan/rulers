@@ -12,3 +12,6 @@
 
 /debug.txt
 rulers-*.gem
+
+# ignore JetBrains IDE config files
+.idea/
