@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rulers (0.0.1)
+    rulers (0.0.2)
       rack
 
 GEM
@@ -89,7 +89,7 @@ CHECKSUMS
   rubocop-ast (1.48.0)
   rubocop-performance (1.25.0)
   ruby-progressbar (1.13.0)
-  rulers (0.0.1)
+  rulers (0.0.2)
   standard (1.52.0)
   standard-custom (1.0.2)
   standard-performance (1.8.0)
