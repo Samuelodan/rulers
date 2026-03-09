@@ -11,7 +11,7 @@ module Rulers
     end
 
     def render(view_name, locals = {})
-      filename = File.join Dir.pwd, "app", "views", "#{view_name}.html.erb"
+      filename = File.join "app", "views", "#{view_name}.html.erb"
       template = File.read filename
       eruby = Erubis::Eruby.new template
       eruby.result locals # .merge(env: env) # but we're not using this now.
