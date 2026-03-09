@@ -2,12 +2,10 @@ require "erubis"
 
 module Rulers
   class Controller
+    attr_reader :env
+
     def initialize(env)
       @env = env
-    end
-
-    def env
-      @env
     end
 
     def render(view_name, locals = {})
